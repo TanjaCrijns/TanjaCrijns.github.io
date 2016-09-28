@@ -2551,6 +2551,10 @@
 			color: rgba(255, 255, 255, 0.6);
 		}
 
+		#footer .icons a:hover {
+			color: rgba(32, 178, 170, 0.6)
+		}
+
 	#footer .copyright {
 		color: rgba(255, 255, 255, 0.4);
 		font-size: 0.8em;
