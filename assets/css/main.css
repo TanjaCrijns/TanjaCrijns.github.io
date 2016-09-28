@@ -2520,7 +2520,7 @@
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.7);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2538,7 +2538,7 @@
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: rgba(255, 255, 255, 0.6);
 		}
 
 	#footer .copyright {
