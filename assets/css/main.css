@@ -48,6 +48,14 @@
 		-webkit-text-size-adjust: none;
 	}
 
+/* Help */
+
+#copy{
+	opacity: 0.5;
+
+}
+
+
 /* Box Model */
 
 	*, *:before, *:after {
