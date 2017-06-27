@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Natural computing: Genetic Algorithm Image Mosaics</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generating Image Mosaics using a Genetic Algorithm</h1>
+            <div class="row">
+                <div class="one-third column">
+                    <h4>Source image</h4>
+                </div>
+                <div class="one-third column">
+                    <h4>Current attempt</h4>
+                </div>
+                <div class="one-third column">
+                    <h4>Target image</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="one-third column button-wrapper">
+                    <canvas id="sourceImage"></canvas>
+                </div>
+                <div class="one-third column button-wrapper">
+                    <canvas id="attempt"></canvas>
+                </div>
+                <div class="one-third column button-wrapper">
+                    <canvas id="destImage"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="one-third column button-wrapper">
+                        <select class="" id="source-image-selection" onchange="loadImage('source')">
+                            <option selected disabled>Select an image</option>
+                        </select>
+                    </div>
+				<div class="one-third column">
+                <div class="button-wrapper">
+                    <input type="button" value="Start" class="button-primary" onclick="startAlgorithm()">
+                </div>
+				<div style="text-align: center">
+				Works fastest in Mozilla Firefox
+				</div>
+				</div>
+                <div class="one-third column button-wrapper">
+                        <select class="" id="target-image-selection" onchange="loadImage('target')">
+                            <option selected disabled>Select an image</option>
+                        </select>
+                </div>
+            </div>
+            <div class="row">
+            <div class="one-half column">
+                Iteration: <span id='iteration-number'></span><br>
+                All time best: <span id='all-time-best'></span><br><br><br>
+            
+                <input type="button" onclick="showPlot()" class="button-primary" value="Show plot">
+                <div id="chart">
+                </div>
+                <div>
+                    <textarea id="export-text"></textarea>
+                </div>
+            </div>
+            <div style="text-align: right" class="one-half column">
+                <label for="selection-algorithm">Selection algorithm: </label>
+                <select class="" id="selection-algorithm">
+                            <option value="tournament">Tournament selection</option>
+                            <option value="roulette">Roulette wheel selection</option>
+                            <option value="ranking">Rank-based selection</option>
+                </select>
+                <label for="population-size">Population size:</label>
+                <input type="number" id="population-size" min="1" value="50">
+                <label for="mutation-rate">Mutation rate:</label>
+                <input type="number" id="mutation-rate" min="0" max="1" value="0.8">
+            </div>
+            </div>
+        </div>
+        
+        <!--Load the AJAX API-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
