@@ -586,9 +586,7 @@ function startAlgorithm() {
         let fitness = ga.getBestSolution().fitness;
         allTimeBest.innerHTML = fitness;
         fitnesses[ga.iteration - 1] = fitness;
-        if (ga.iteration < 15000) {
-            window.requestAnimationFrame(runAlgorithm);
-        }
+        window.requestAnimationFrame(runAlgorithm);
     }
     runAlgorithm();
 }
