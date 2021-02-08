@@ -2089,6 +2089,7 @@
 
 		.image.avatar {
 			border-radius: 100%;
+			border: 1px solid #000000;
 		}
 
 			.image.avatar:before {
