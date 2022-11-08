@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<div id="current_date"></p>
+    <script>
+        var current_date = new Date();
+        var current_day = current_date.getDate();
+        if (current_day == 9){
+            answer = "Ja!"
+        } else {
+            answer = "Nee! :("
+        }
+        document.getElementById("current_date").innerHTML = answer;
+    </script>
+</html>
