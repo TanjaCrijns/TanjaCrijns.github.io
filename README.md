@@ -1,1 +1,1 @@
-Website repo for tanjacrijns.com
+Repository for my personal website tanjacrijns.com
